@@ -1,0 +1,35 @@
+{
+  "name": "redis-hod-token-repository",
+  "version": "0.0.1",
+  "description": "A redis-based token repository for storing HPE Haven OnDemand tokens",
+  "repository": "hpe-idol/node-redis-hod-token-repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require should",
+    "test:watch": "mocha --require should -w",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --require should"
+  },
+  "dependencies": {
+    "ioredis": "~1.9.1",
+    "node-uuid": "~1.4.7"
+  },
+  "devDependencies": {
+    "istanbul": "~0.4.1",
+    "mocha": "~2.3.3",
+    "proxyquire": "~1.7.3",
+    "should": "~7.1.1",
+    "sinon": "~1.17.2"
+  },
+  "keywords": [
+    "hod",
+    "havenondemand",
+    "token",
+    "repository",
+    "tokens",
+    "haven",
+    "ondemand",
+    "redis"
+  ],
+  "author": "Jonathan Soul <jonathan.soul@hpe.com>",
+  "license": "MIT"
+}
