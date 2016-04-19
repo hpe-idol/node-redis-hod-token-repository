@@ -1,9 +1,18 @@
 language: node_js
 node_js:
-  - "5"
-  - "5.1"
-  - "4"
-  - "4.2"
-  - "4.1"
-  - "4.0"
-  - "0.12"
+- '5'
+- '5.1'
+- '4'
+- '4.2'
+- '4.1'
+- '4.0'
+- '0.12'
+deploy:
+  provider: npm
+  email: hpe-idol-oss@groups.ext.hpe.com
+  api_key:
+    secure: K8BkUgG6JVT1BjhLf4HWrlmpOM+aZTc19xgC2JMnazeWU/UPfsfFO7HipjVUvL/Uh326D/ukVCdluMMk5lvbHmxS+8x9E4jPOw7d4LXsA/7MBCaPQkM68EEfcUIetYJMy4e6YgMRfRlyVSRk+rcThjNE+r+xI9dYRvHAxLI3LPmh8d+5ggdDrpCW3d6DB24VTyuwScZ6UOHm4tnpTURWtqLIDW8EE9cN8/Je5uSCOSRbCyiusYGAvxVFLTGkCo1bUTvstv1tRG7X1/F8rcMU/+IGPdIs9VKi2jERO141iqjtcmnPJcaW8/5QsPwokbQjxqh7bzpY2StffFVr1FjXKAXbH6Su3c6pWLxAiSBNAHItahhUyo8qB/rH6L1O0t2KHkv68V6Tk1xXRM7583RMgKLVC7yhQfgv/CsrBAT/k4ykIXymfK30b2Uop5tHFF66ip4g9MDnssVr/6d3fITRyIok3Pj3Qq1tubeBxKQtxrmbZzc5sxAeOEo48N89JsM6jhAPtEVfqTfuAoXwXVBkie+lWjVujvFuRtqDIb2TMse7sN+h0fjeEwdbGL4eyBZrpIhTNEImA5uQMXxAs3JKF1KAb34cd6PYS/tYseB04eJsR6u4di0x7m4tuiJ3fHPm7GOhQIjxxnvh8UL6ezq92MC3eeHClCSMaqPKLaiUUX0=
+  on:
+    branch: master
+    tags: true
+    repo: hpe-idol/node-redis-hod-token-repository
