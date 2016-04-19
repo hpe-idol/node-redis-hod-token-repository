@@ -1,6 +1,6 @@
 {
   "name": "redis-hod-token-repository",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A redis-based token repository for storing HPE Haven OnDemand tokens",
   "repository": "hpe-idol/node-redis-hod-token-repository",
   "main": "index.js",
